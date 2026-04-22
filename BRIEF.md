@@ -4,11 +4,13 @@
 >
 > Before generating anything, confirm you have read:
 > 1. This BRIEF.md
-> 2. `SEED/DESIGN-SIGNALS.md`
-> 3. `SEED/PHILOSOPHY-2024.md`
-> 4. `SEED/VOICE-CONSTRAINTS.md`
-> 5. `SEED/tokens-reference.css` + `SEED/typography-reference.css`
-> 6. `SEED/STD-STYLE_GUIDE-excerpt.md`
+> 2. `SEED/DESIGN-SIGNALS.md` — synthesised signals (character spine, principles, voice samples, admiration references)
+> 3. `SEED/PHILOSOPHY-2024.md` — archived 8 design principles (serious prior art)
+> 4. `SEED/VOICE-CONSTRAINTS.md` — hard voice/typographic constraints
+> 5. `SEED/VOICE-FRAMEWORKS.md` — named frameworks (Minto, BLUF, Pyramid, Trust Triad, etc.)
+> 6. `SEED/VISUAL-FRAMEWORKS.md` — named visual/graphics frameworks (OPAL, CIM, scene graph, etc.)
+> 7. `SEED/STD-STYLE_GUIDE-excerpt.md` — canonical brand identity
+> 8. `SEED/tokens-reference.css` + `SEED/typography-reference.css` — running CSS (mitch-hensman.com)
 >
 > Then summarise the operator's voice in your own words, their top 3 design constraints, and the 2 most important anti-patterns you will avoid. Do not begin generating tier content until the operator confirms your grounding is accurate.
 
@@ -94,6 +96,8 @@ The Contexts tier is extensible — add new context files when new surfaces emer
 - **`SEED/PHILOSOPHY-2024.md`** — eight named design principles Mitch articulated in December 2024. Archived but serious prior art. Treat as mature starting material; keep, revise, or replace with operator input and explicit rationale in `decisions/`.
 - **`SEED/STD-STYLE_GUIDE-excerpt.md`** — canonical brand identity excerpt (brand foundation, typography conventions, voice characteristics). Reference; do not redefine.
 - **`SEED/VOICE-CONSTRAINTS.md`** — consolidated hard constraints from `CLAUDE.md §0.3` and `MEMORY.md`. The bans-as-positive-stances list.
+- **`SEED/VOICE-FRAMEWORKS.md`** — named frameworks already internalised in the operator's voice work (Minto Pyramid, BLUF, Trust Triad, SUCCESs, Given-New Contract, Cognitive Load Theory, cross-cultural code-switching). Use as scaffolding when authoring VOICE pillars; cite by name in decisions/ when a framework drives a specific choice. Don't over-academicise.
+- **`SEED/VISUAL-FRAMEWORKS.md`** — named visual/graphics frameworks from prior Sitruna work (OPAL, CIM Architecture, scene-graph generation, LLMLingua, EPiC, LPIPS/CLIP validation, compliance baselines). Informs imagery rules, pattern specs, and Contexts that include visual production.
 - **`SEED/tokens-reference.css` + `SEED/typography-reference.css`** — actual running CSS tokens from mitch-hensman.com. Authoritative for what is currently implemented. When authoring `2-TOKENS/*`, extract from these first; then propose extensions.
 
 Cite SEED references explicitly in authored output when building on them.
