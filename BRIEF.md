@@ -56,7 +56,7 @@ The operator runs two brands in complementary layers. The design system covers b
 ## 2. Audiences this design system serves
 
 1. **Mitch himself** — personal productivity outputs (briefings, plans, notes, reports)
-2. **Website visitors** at mitch-hensman.com — prospective clients, readers, collaborators
+2. **Website visitors** at `mitch-hensman.com` (HensPham personal) and `connexusminds.com` (ConnexusMinds corporate) — prospective clients, readers, collaborators; shared voice, distinct visual navigation per §1a
 3. **Commercial counterparts reached via ConnexusMinds** — Sitruna (Amazon operations), prospects and pipeline contacts for AI-implementation consulting. ConnexusMinds is the operator's own consultancy brand, not an external client; its brand system is in scope for this design system (see §1a)
 4. **Collaborators** — Mai Pham (business partner; Vietnamese, bilingual) and Megan (sister, based in Croatia)
 5. **AI consumers** — Claude, Gemini, Codex instances that render outputs against this system

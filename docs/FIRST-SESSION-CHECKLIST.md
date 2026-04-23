@@ -156,9 +156,27 @@ Then:
 - Create a `sessions/YYMMDD-session-01.md` file using `sessions/TEMPLATE.md`; fill in decisions, drift observed, prompts that worked
 - Push to GitHub if you want the repo state visible to Claude Design for the next session
 
-### After the session
+### After the session — integration into the repo
 
-Before session 2 opens, review the committed output in a fresh Claude main session (Opus). Ask the main session: "What did Claude Design draft here? What's missing, what's drifted, what's good?" Cross-model review catches in-session blind spots. Adjust the PROMPTING-PLAYBOOK with any pattern that worked (or reliably failed).
+Claude Design authors into its own project workspace, not directly into the GitHub repo. Claude Design cannot push to GitHub without explicit codebase access; session output sits in the CD project filesystem until manually exported.
+
+**Post-session integration steps** (operator-driven):
+
+1. **Export** Claude Design's session output — the authored tier files, any new `sessions/YYMMDD-session-NN.md` notes, CHANGELOG entry, ADR file(s)
+2. **Drop into local clone** of the design-system repo at matching paths (mirror structure: `1-FOUNDATIONS/*.md`, `sessions/*.md`, `decisions/*.md`, root `CHANGELOG.md`)
+3. **Diff against repo state** — use git diff to see what CD produced vs previous; catch accidental overwrites (e.g., a re-authored file you wanted to keep)
+4. **Resolve ADR numbering conflicts** — CD numbers ADRs locally without knowing repo state; if CD produced `0003-X.md` and repo already has `0003-Y.md`, rename CD's file to the next available number and add a one-line cross-reference header: `Supplements ADR 0003 (Y); extends/narrows by ...`
+5. **Resolve CHANGELOG collisions** — if CD bumped to a version you've already used, merge entries under one version or renumber CD's bump
+6. **Cross-model review** — fresh Opus main session. Ask: "What did CD draft here? What's missing, what's drifted, what's good?" Three specific checks: (a) BRIEF §11 completeness tests met for each authored tier file; (b) per-brand divergence captured in Anti-Patterns and any other file touching visual language (gradients, palette, typography); (c) quantitative claims from SEED not silently restated as fact (UNVERIFIED tripwire respected)
+7. **Commit + push** when review passes — one commit per session is the cleanest pattern; use `vX.Y.Z — session N: [tier] authoring` as the convention
+8. **Update plan Status Log** — brief entry noting session N completed, tier files produced, any new ADRs, any open questions that bled into the next session
+
+**What's worth capturing in the playbook afterwards**:
+
+- Prompts that worked (migrate to `docs/PROMPTING-PLAYBOOK.md`)
+- Drift patterns observed and the corrective prompt that restored direction
+- Capability observations about CD itself — format handling, iteration behaviour, token-cost signals
+- Integration friction — if step 4/5 collisions recur, consider a naming convention that prevents them (e.g., CD numbers ADRs from 90 or 900 locally, or asks the operator for the next number at session close)
 
 ---
 

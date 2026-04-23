@@ -4,6 +4,12 @@ Version history for the Mitch Hensman Design System.
 
 Format: `YYMMDD | version | change`. Newest first. One-line summary per entry; detail in `decisions/` if material.
 
+## 260424 | v0.1.6 | Post-session-1 adjustments (pre-session-2 integration prep)
+
+- `BRIEF.md §2 audience 2` — expanded from "Website visitors at mitch-hensman.com" to cover both brand surfaces (HensPham mitch-hensman.com + ConnexusMinds connexusminds.com); audience model stays six-category (stable per session-1 review)
+- `docs/FIRST-SESSION-CHECKLIST.md` — new post-session integration section codifying the manual export → diff → ADR-renumber → cross-model review → commit → push pattern; addresses the ADR-numbering collision surfaced during session-1 review
+- CHANGELOG version numbering note: Claude Design's local `v0.2.0` bump in its project workspace has not been adopted here; this repo's versioning continues sequentially (v0.1.6 this entry); CD's local version is reconciled at integration commit
+
 ## 260424 | v0.1.5 | Two-brand scope (ConnexusMinds + HensPham)
 
 - `decisions/0003-two-brand-scope.md` — formalises scope expansion: the design system covers two complementary brand surfaces (HensPham personal + ConnexusMinds corporate); rejects single-brand-with-register-variation framing
