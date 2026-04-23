@@ -4,6 +4,19 @@ Version history for the Mitch Hensman Design System.
 
 Format: `YYMMDD | version | change`. Newest first. One-line summary per entry; detail in `decisions/` if material.
 
+## 260424 | v0.1.5 | Two-brand scope (ConnexusMinds + HensPham)
+
+- `decisions/0003-two-brand-scope.md` — formalises scope expansion: the design system covers two complementary brand surfaces (HensPham personal + ConnexusMinds corporate); rejects single-brand-with-register-variation framing
+- `BRIEF.md §1` operator profile corrected — "Connexus Intelligence" → "ConnexusMinds" (brand evolution per SEED)
+- `BRIEF.md §1a` new Two-brand architecture section — documents HensPham and ConnexusMinds divergences, shared foundations, authoring expectations per tier, known gap (Connexus site source not yet local)
+- `BRIEF.md §2` audiences — clarifies ConnexusMinds is operator's own brand, not an external client
+- `CATALOGUE.md §1 Out of scope` — disambiguates client-brand work (out) from operator's own brands (both in)
+- `CATALOGUE.md §1a` new Two-brand architecture in scope subsection with per-brand specifications
+- `CATALOGUE.md §2 SEED coverage` — three new SEED files listed
+- `SEED/CONNEXUSMINDS-colour-guide.md` — canonical ConnexusMinds palette (Deep Teal / Network Navy / Intelligence Sage / Insight Amber / Wisdom Grey); approved Intelligence-Flow gradient; usage rules
+- `SEED/CONNEXUSMINDS-brand-design-guide.md` — full brand spec including Intelligence → Minds transition, network-topology visual metaphor, Inter Variable typography, implementation architecture
+- `SEED/CONNEXUSMINDS-voice-synthesis.md` — public-safe synthesis of corporate voice principles; six voice commitments; language-discipline never/instead table; signature-accountability matrix. References internal ENGAGEMENT_POSTURE.md + STD-SIGNATURE_POLICY.md without copying sensitive content
+
 ## 260423 | v0.1.4 | Session-1 enablement
 
 - `docs/FIRST-SESSION-CHECKLIST.md` — ten-step guide for opening session 1; condenses playbook into an action sheet; cross-references BRIEF §11, SEED CANDIDATE refs, and stopping rules (addresses review I1)

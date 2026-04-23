@@ -16,17 +16,48 @@
 
 ## 1. Operator profile
 
-**Mitch Hensman** — British, born 1984. Based in Chiang Mai, Thailand (UTC+7). MEng Civil Engineering, Imperial College London. Remote sole proprietor since 2020. Analytics Manager + AI Solutions Architect at ActSEA; consults via Connexus Intelligence.
+**Mitch Hensman** — British, born 1984. Based in Chiang Mai, Thailand (UTC+7). MEng Civil Engineering, Imperial College London. Remote sole proprietor since 2020. Analytics Manager + AI Solutions Architect at ActSEA; consults via **ConnexusMinds** (brand; a principal partnership with Mai Pham; formerly branded "Connexus Intelligence" — see `SEED/CONNEXUSMINDS-brand-design-guide.md` for the transition rationale).
 
 **Disposition**: high conscientiousness; evidence-based; values parsimony, honesty, judgement, kindness. Systems-literate (runs a personal operating system across Airtable, TickTick, Google Drive, GitHub, NotebookLM). Vegan, minimalist-leaning.
 
 **Anti-disposition** (things Mitch visibly rejects): performative language, marketing-speak, hype, emoji-heavy prose, decorative-only design, status-game aesthetics, dark patterns.
 
+## 1a. Two-brand architecture
+
+The operator runs two brands in complementary layers. The design system covers both; they diverge in visual language and converge on voice principles.
+
+**HensPham** (personal) — `mitch-hensman.com`
+- Substance-first, evidence-based, functional-over-ornamental
+- Restrained: no gradients, no emoji in prose, restrained motion
+- Canonical CSS in `SEED/tokens-reference.css` + `SEED/typography-reference.css`
+- Personal authenticity layer; relationship-building foundation
+
+**ConnexusMinds** (corporate consultancy; Mitch + Mai partnership) — `connexusminds.com`
+- Network-topology visual metaphor (5–7 node constellation; golden ratio proportions)
+- Distinct palette: Deep Teal `#0F766E` (primary), Network Navy `#1E3A8A`, Intelligence Sage `#166534`, Insight Amber `#D97706`, Wisdom Grey `#475569`
+- Typography: Inter Variable (600 for "CONNEXUS", 400 for "Minds"), fallback Source Sans Pro
+- Gradients approved (Intelligence Flow: Deep Teal → Network Navy, 135°) — this is a deliberate divergence from the HensPham-layer gradient ban
+- Canonical specs in `SEED/CONNEXUSMINDS-colour-guide.md` + `SEED/CONNEXUSMINDS-brand-design-guide.md`
+- Public-facing corporate authority and systematic capability
+
+**Composition** — "ConnexusMinds by HensPham" is the documented combined usage for trust-building in early client relationships. The two brands coexist rather than merge.
+
+**What the design system authors**:
+- **Tier-1 Foundations** captures shared voice principles (honesty, directness, evidence, UK English, Minto / BLUF structure, accessibility AA+ floor); `ANTI-PATTERNS.md` must disambiguate HensPham-specific bans (gradients, emoji) from ConnexusMinds-specific permissions (approved gradients for hero sections; network-topology visuals). A single ANTI-PATTERNS.md with per-brand sub-sections is acceptable; two files are also acceptable — decide via ADR.
+- **Tier-2 Tokens** contains two brand token sets. `2-TOKENS/colour.yaml` either nests under `hensph.*` and `connexusminds.*` namespaces, or splits into `colour.hensph.yaml` + `colour.connexusminds.yaml`. Same question for typography. Decide at tokens session and capture as ADR.
+- **Tier-3 Patterns** is largely shared (hierarchy, layout, dataviz, document structure, multilingual); imagery and motion may have per-brand variants.
+- **Tier-4 Contexts**: `WEBSITE.md` should either cover both sites (with per-brand sections) or split into `WEBSITE-HENSPH.md` + `WEBSITE-CONNEXUSMINDS.md`. `CLIENT-DELIVERABLES.md` applies ConnexusMinds corporate register. `GOAL-OVERRIDES/7A-CONNEXUS.md` formalises any register-specific overrides beyond the WEBSITE context.
+- **Tier-5 Interfaces**: `CSS-CANONICAL.md` references both canonical CSS sources (HensPham: mitch-hensman.com repo; ConnexusMinds: `connexusminds.com` repo — not yet available locally, flag as gap).
+
+**Voice synthesis for corporate register**: `SEED/CONNEXUSMINDS-voice-synthesis.md` — public-safe extracts from internal posture and signature policy documents. Reference rather than copy those internal docs when authoring `4-CONTEXTS/CLIENT-DELIVERABLES.md`.
+
+**Known gap**: ConnexusMinds website source is not yet locally available (`~/Local/WEB-PLATFORM/PAGES/CONNEXUSMINDS/` is empty). Token extraction for ConnexusMinds is therefore from the brand-spec documents (colour guide + design guide), not from running CSS. Note this in any authored Tokens content.
+
 ## 2. Audiences this design system serves
 
 1. **Mitch himself** — personal productivity outputs (briefings, plans, notes, reports)
 2. **Website visitors** at mitch-hensman.com — prospective clients, readers, collaborators
-3. **Commercial clients** — Sitruna (Amazon operations), Connexus Intelligence (AI consulting)
+3. **Commercial counterparts reached via ConnexusMinds** — Sitruna (Amazon operations), prospects and pipeline contacts for AI-implementation consulting. ConnexusMinds is the operator's own consultancy brand, not an external client; its brand system is in scope for this design system (see §1a)
 4. **Collaborators** — Mai Pham (business partner; Vietnamese, bilingual) and Megan (sister, based in Croatia)
 5. **AI consumers** — Claude, Gemini, Codex instances that render outputs against this system
 6. **Future self** — sustainability of the system matters; designs must survive operator evolution

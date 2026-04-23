@@ -27,13 +27,28 @@ The governing design artefacts for all output Mitch produces, across every surfa
 
 ### Out of scope — never authored here
 
-- **Full brand refresh** — existing brand (Connexus commercial; `mitch-hensman.com` personal) remains canonical
-- **Website visual redesign** — this system *feeds* the website; the website repo owns its own implementation
+- **Full brand refresh** — the two operator brands (HensPham personal + ConnexusMinds corporate) remain canonical; this system structures and completes them, does not redefine them
+- **Website visual redesign** — this system *feeds* the websites; each website repo owns its own implementation
 - **Figma workspace design files** — tokens format here is Figma-ready but no `.fig` files live here
 - **Sensitive or private commercial information** — this is a public repo
-- **Client-specific brand deliverables** — Sitruna/Connexus engagements have their own brand systems (referenced, not included)
+- **Client-brand deliverables** — brand work done *for* external clients (e.g., Sitruna's own listings, a client's brand identity) is out of scope; the *operator's own brands*, including ConnexusMinds as Mitch's consultancy face, are in scope (see §1a below)
 - **Tool-specific operator documentation** — lives in `00-MASTER/03-STANDARDS/STD-TOOL_*.md`; not here
-- **Sensitive identity or strategy documents** — `PROFILE-USER.md`, goal strategy docs stay on GDrive
+- **Sensitive identity or strategy documents** — `PROFILE-USER.md`, goal strategy docs, operational documents marked "Not for clients" (e.g., `ENGAGEMENT_POSTURE.md`, `STD-SIGNATURE_POLICY.md`) stay on GDrive and are referenced, not copied
+
+### 1a. Two-brand architecture in scope
+
+The operator runs two brands in complementary layers:
+
+- **HensPham** (personal) — `mitch-hensman.com`; substance-first, evidence-based, functional-over-ornamental; no gradients, no emoji in prose, UK English, restrained motion. Running CSS in `SEED/tokens-reference.css` + `SEED/typography-reference.css` is the implementation of record.
+- **ConnexusMinds** (corporate consultancy, formerly "Connexus Intelligence") — `connexusminds.com` (site source not yet available); network-topology visual metaphor, distinct colour palette (Deep Teal #0F766E, Network Navy #1E3A8A, Intelligence Sage #166534, Insight Amber #D97706), typography Inter Variable, approved Intelligence-Flow gradient Deep Teal → Network Navy. Canonical specs in `SEED/CONNEXUSMINDS-colour-guide.md` + `SEED/CONNEXUSMINDS-brand-design-guide.md`.
+
+Both are in scope. The design system must articulate:
+
+- What is shared (voice principles: honesty, directness, evidence, UK English, Minto/BLUF structure, accessibility AA+ floor)
+- What diverges (visual language: restrained-monochrome personal vs network-topology corporate; gradient allowance; register tone)
+- Composition rules — when both brands co-appear ("ConnexusMinds by HensPham"), which rules govern
+
+Tier-1 Foundations capture shared principles; Tier-2 Tokens contain both brand token sets; Tier-4 Contexts handles per-surface application; `GOAL-OVERRIDES/7A-CONNEXUS.md` can formalise the corporate-register override.
 
 ### Extension rules
 
@@ -68,9 +83,12 @@ Tracks what's populated vs scaffold-only. Status symbols: ✓ complete · ▶ in
 | `SEED/STD-STYLE_GUIDE-excerpt.md` | ✓ | Brand identity excerpt |
 | `SEED/VOICE-CONSTRAINTS.md` | ✓ | Hard constraints |
 | `SEED/VOICE-FRAMEWORKS.md` | ✓ | Named frameworks (Minto, BLUF, etc.) |
-| `SEED/VISUAL-FRAMEWORKS.md` | ✓ | Named frameworks (OPAL, CIM, etc.) |
-| `SEED/tokens-reference.css` | ✓ | From mitch-hensman.com |
-| `SEED/typography-reference.css` | ✓ | From mitch-hensman.com |
+| `SEED/VISUAL-FRAMEWORKS.md` | ✓ | Named frameworks (OPAL, CIM, etc.); two claims flagged UNVERIFIED |
+| `SEED/tokens-reference.css` | ✓ | From mitch-hensman.com (HensPham brand) |
+| `SEED/typography-reference.css` | ✓ | From mitch-hensman.com (HensPham brand) |
+| `SEED/CONNEXUSMINDS-colour-guide.md` | ✓ | ConnexusMinds canonical palette + gradient + usage rules |
+| `SEED/CONNEXUSMINDS-brand-design-guide.md` | ✓ | ConnexusMinds full brand spec (network topology metaphor, typography, applications, implementation) |
+| `SEED/CONNEXUSMINDS-voice-synthesis.md` | ✓ | Public-safe voice extracts for corporate register (pointers to internal-only ENGAGEMENT_POSTURE + STD-SIGNATURE_POLICY) |
 
 ### 1-FOUNDATIONS/
 
