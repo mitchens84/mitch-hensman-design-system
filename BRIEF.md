@@ -51,6 +51,9 @@
 - Thai typography support required for multilingual PDF/EPUB rendering
 - Non-Latin scripts must render correctly; historical pattern — use Playwright (Chrome headless) rather than weasyprint for multilingual PDFs
 
+**Motion**:
+- Default stance: motion is off; any authored motion token or pattern must justify itself with a functional purpose (focus indication, state transition, progressive reveal, loading feedback). Decorative motion is disallowed; micro-interactions require named rationale; respect `prefers-reduced-motion` universally
+
 **Implementation coupling**:
 - Website CSS at `SEED/tokens-reference.css` and `SEED/typography-reference.css` is the running implementation — describe and extend; do not contradict
 - Brand identity in `SEED/STD-STYLE_GUIDE-excerpt.md` remains canonical; do not redefine
@@ -128,3 +131,55 @@ Ask direct, specific questions when you need operator input. Prefer "should this
 ## 10. Technical note on this repo
 
 This is a public MIT-licensed repo. Anything committed here is public. Do not include secrets, private client information, or pre-release commercial material in any authored file. The operator's website repo (`mitch-hensman-com`) remains private — content there does not automatically belong here.
+
+## 11. Per-tier completeness tests
+
+A tier file is "provisionally complete" (committable; reviewable cold) when it meets its per-tier bar below. Provisional completion is the stopping point for a single Claude Design session; full completion is reached only after cross-session review in a fresh Opus session.
+
+### 1-FOUNDATIONS
+
+| File | Completeness test |
+|---|---|
+| `PHILOSOPHY.md` | Names governing stance; declares what the system privileges; declares what it guards against; cites at least three items from `SEED/PHILOSOPHY-2024.md` (keep / revise / reject, each with rationale) |
+| `BRAND.md` | Identity statement; audiences (six listed in BRIEF §2); personal-vs-commercial disambiguation; references `SEED/STD-STYLE_GUIDE-excerpt.md` as canonical without restating |
+| `VOICE.md` | Three voice pillars, each one-sentence definition + two-sentence explanation; tone modulation across five registers (personal / commercial / client / AI / social); verbatim hard-constraint checklist from `SEED/VOICE-CONSTRAINTS.md`; cites `SEED/VOICE-FRAMEWORKS.md` frameworks where they drive a choice |
+| `ANTI-PATTERNS.md` | Every item in BRIEF §4 restated with one-sentence rationale; plus operator-specific additions surfaced during session; explicit examples of each anti-pattern (or link to one) |
+| `ACCESSIBILITY.md` | WCAG AA baseline stated; six coverage areas (contrast, keyboard, screen-reader, cognitive, motion-sensitivity, language) each with specifics; `prefers-reduced-motion` explicit; Thai-specific considerations noted |
+
+### 2-TOKENS
+
+| File | Completeness test |
+|---|---|
+| `colour.md` + `colour.yaml` | Primitives → semantic → component hierarchy declared; all semantic roles paired WCAG AA verified against text layer; dark-mode contract specified (either reciprocal mapping or algorithmic derivation); extraction from `SEED/tokens-reference.css` cited per token kept/renamed |
+| `typography.md` + `typography.yaml` | Modular scale ratio named; heading + body + caption sizes derived; measure rule stated (≤ 65ch body); leading range specified; extraction from `SEED/typography-reference.css` cited |
+| `spacing.md` + `spacing.yaml` | Base unit named (4 or 8px); full scale enumerated; section / component / inline usage rules separate |
+| `motion.md` + `motion.yaml` | Default-off stance stated; any authored motion primitive justifies with functional purpose; `prefers-reduced-motion` compliance required; duration + easing tokens if used |
+| `tokens.yaml` | Unified export; validates against YAML schema; imports cleanly (dry-run tested) |
+
+### 3-PATTERNS
+
+| File | Completeness test |
+|---|---|
+| `TYPOGRAPHY-HIERARCHY.md` | Heading scale application rules; reading rhythm; inverted pyramid per section |
+| `LAYOUT.md` | Grid system; scannability rules; negative-space stance |
+| `DATAVIZ.md` | Encoding rules; accessibility in charts; absorption of STD-DATAVIZ complete |
+| `DOCUMENT-STRUCTURE.md` | YAML frontmatter schema; section conventions; document-anchor icon system if applicable |
+| `INTERACTION.md` | Link / button / form patterns; focus-ring specifics; state coverage |
+| `MULTILINGUAL.md` | Thai specifics; PDF/EPUB rendering technique (Playwright, not weasyprint); script-switching rules |
+| (new) `IMAGERY.md` | Hero vs lifestyle modes; AI-generation allowances and bans; references `SEED/VISUAL-FRAMEWORKS.md` — if a SEED claim is cited, the claim is verified before authoring |
+
+### 4-CONTEXTS
+
+Every context file: purpose + audience + applied Foundations / Tokens / Patterns choices + format-specific rules + anti-patterns. The canonical `4-CONTEXTS/AI-CONVERSATION.md` must be authored such that CLAUDE.md §0.3 becomes a derived view with no content duplication.
+
+### 5-INTERFACES
+
+Every interface file: consumer + access pattern + sync obligation + drift-detection rule.
+
+### Cross-tier
+
+Downstream tiers must not contradict upstream. A contradiction detected during review is an ADR-worthy decision — either upstream changes, or the contradiction is explicitly noted as a scoped exception in `decisions/`.
+
+### Source-claim verification
+
+Any specific quantitative claim (e.g., "X% accuracy", "Y reject rate") sourced from `SEED/VOICE-FRAMEWORKS.md` or `SEED/VISUAL-FRAMEWORKS.md` must be traced to primary literature before being restated in an authored tier file. SEED files aggregate prior NotebookLM synthesis and can contain AI-inference-laundered numbers; treat them as claims to verify, not facts to cite.

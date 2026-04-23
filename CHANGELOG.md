@@ -4,6 +4,15 @@ Version history for the Mitch Hensman Design System.
 
 Format: `YYMMDD | version | change`. Newest first. One-line summary per entry; detail in `decisions/` if material.
 
+## 260423 | v0.1.3 | Pre-handoff hardening
+
+- `BRIEF.md` §3 adds **Motion** subsection — default-off stance; motion tokens must justify with functional purpose; `prefers-reduced-motion` universal (addresses review G7)
+- `BRIEF.md` §11 **Per-tier completeness tests** added — explicit "provisionally complete" bar for each tier file; includes cross-tier contradiction protocol and a source-claim verification rule against AI-inference-laundered SEED numbers (addresses review G1)
+- `1-FOUNDATIONS/ACCESSIBILITY.md` scaffold purpose comment expanded to enumerate six coverage areas: contrast, keyboard, screen-reader, cognitive, motion-sensitivity, language (addresses review G9)
+- `SEED/DESIGN-SIGNALS.md` §7 admiration references annotated as CANDIDATE with explicit session-1 confirmation step — operator elected to confirm in context rather than ahead of time (addresses review G4)
+- `decisions/0002-handoff-model-probe.md` created — records that Phase 1.5 probe is descoped; session 1 serves as the empirical test (addresses review D3)
+- Governing plan Status Log receives v6 entry recording the standalone-repo decision and probe descope (addresses review D1)
+
 ## 260422 | v0.1.2 | BRIEF updated to include SEED framework libraries
 
 - `BRIEF.md` §0 reading list expanded from 6 to 8 items (adds `VOICE-FRAMEWORKS.md` + `VISUAL-FRAMEWORKS.md`)

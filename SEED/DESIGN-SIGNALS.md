@@ -114,9 +114,11 @@ From `CLAUDE.md §0.3` and `MEMORY.md` Communication Preferences:
 
 Read positively: clarity and efficiency over aesthetic ornamentation.
 
-## 7. Admiration references — curated, operator to confirm
+## 7. Admiration references — CANDIDATE, operator confirms at session 1
 
-No visual-inspiration bookmarks exist in the Brave library. The absence is itself informative (functional over aesthetic curation). Seven references curated to align with documented values (parsimony, evidence-based, biophilic-leaning, functional-over-ornamental, systems-literate). **The operator should confirm which stay, which drop, which get replaced** during the first Claude Design session:
+**Status** (260423): All seven below are CANDIDATE references. Operator elected to confirm in context during the first Claude Design session rather than ahead of time. Claude Design should open session 1 with an explicit confirmation step — present each reference, the operator marks CONFIRMED / DROP / REPLACE-WITH-[X] — before proceeding to any visual-direction work.
+
+No visual-inspiration bookmarks exist in the Brave library. The absence is itself informative (functional over aesthetic curation). Seven references curated to align with documented values (parsimony, evidence-based, biophilic-leaning, functional-over-ornamental, systems-literate):
 
 1. **Craig Mod** — craigmod.com — walks, slow internet, considered pace, typographic care
 2. **Frank Chimero** — frankchimero.com; "The Shape of Design" — humanist, thoughtful, quiet
