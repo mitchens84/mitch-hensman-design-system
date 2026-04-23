@@ -4,6 +4,14 @@ Version history for the Mitch Hensman Design System.
 
 Format: `YYMMDD | version | change`. Newest first. One-line summary per entry; detail in `decisions/` if material.
 
+## 260423 | v0.1.4 | Session-1 enablement
+
+- `docs/FIRST-SESSION-CHECKLIST.md` — ten-step guide for opening session 1; condenses playbook into an action sheet; cross-references BRIEF §11, SEED CANDIDATE refs, and stopping rules (addresses review I1)
+- `sessions/README.md` + `sessions/TEMPLATE.md` — scaffold for per-session notes; captures opening, grounding verification, decisions, drift, stop reason, next-session focus (addresses review G2)
+- `decisions/TEMPLATE.md` — standardised ADR template for consistent future decisions (addresses review G3)
+- `SEED/VISUAL-FRAMEWORKS.md` — two UNVERIFIED-claim HTML comments added flagging the OPAL "94.3%" and "90% trademark rejection" figures as not-traceable to primary source; claims kept in place (per SEED protocol; do-not-modify-in-place relaxed for safety annotations only); BRIEF §11 tripwire requires verification before any authored tier file cites either number (addresses review C4)
+- `docs/intro-for-sharing.md` — "Figma dropped 7%" hedged to "roughly 7% (intraday moves close to 6.9%)" (addresses review C5)
+
 ## 260423 | v0.1.3 | Pre-handoff hardening
 
 - `BRIEF.md` §3 adds **Motion** subsection — default-off stance; motion tokens must justify with functional purpose; `prefers-reduced-motion` universal (addresses review G7)

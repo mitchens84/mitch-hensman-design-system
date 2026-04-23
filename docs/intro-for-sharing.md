@@ -18,7 +18,7 @@ Three reasons worth caring about.
 
 **Design systems become portable.** Your brand, once expressed as a repo or Figma file, can be handed to any tool or collaborator. Consistency stops being labour.
 
-**It challenges the design-tool landscape.** Figma's stock dropped 7% on launch day. Anthropic frames Claude Design as complementary — most serious production still flows through Figma — but the ideation-to-prototype phase has a new serious contender.
+**It challenges the design-tool landscape.** Figma's stock dropped roughly 7% on launch day (intraday moves close to 6.9%). Anthropic frames Claude Design as complementary — most serious production still flows through Figma — but the ideation-to-prototype phase has a new serious contender.
 
 ## How to try it
 

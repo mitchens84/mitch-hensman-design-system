@@ -25,6 +25,8 @@ Amazon-derived but generally applicable standards for product/hero imagery:
 
 ### 2. Product characteristic preservation (OPAL framework)
 
+<!-- UNVERIFIED CLAIM (flagged 260423): The "94.3% accuracy" figure below does not trace to the OPAL primary literature (Vivian Liu et al., ACM — OPAL's published scope is multimodal image generation for news illustration, not product-imagery preservation). Treat as AI-inference-laundered; verify against primary source before citing in any authored tier file. Per BRIEF §11 source-claim verification rule. -->
+
 OPAL: 94.3% accuracy on preserving exact material quality, colour coordination, and patterns while allowing background/composition enhancement. Critical when AI generates or augments product imagery.
 
 **Design-system implication**: anti-pattern rule for AI-generated product shots — the product itself must be exactly preserved; only context varies.
@@ -44,6 +46,8 @@ Emotional and practical use-case scenarios, problem-solving framings, lifestyle 
 **Design-system implication**: informs the authoring workflow in `docs/PROMPTING-PLAYBOOK.md` — iteration is expected; restart only when fundamentally off.
 
 ### 5. Brand style mimicry (around AI content flags)
+
+<!-- UNVERIFIED CLAIM (flagged 260423): The "90% rejection" figure below could not be sourced. The closest public claim (ZebraTruth marketing content) describes the inverse causality — brands rejecting AI videos, not AI tools rejecting trademarked elements. Treat as AI-inference-laundered; verify against primary benchmark before citing in any authored tier file. Per BRIEF §11 source-claim verification rule. -->
 
 Generative AI rejects trademarked elements up to 90% of the time. Solutions: style transfer, descriptive component elements, composition rather than direct copying.
 
