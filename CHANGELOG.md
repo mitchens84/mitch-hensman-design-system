@@ -4,6 +4,31 @@ Version history for the Mitch Hensman Design System.
 
 Format: `YYMMDD | version | change`. Newest first. One-line summary per entry; detail in `decisions/` if material.
 
+## 260427 | v0.1.7 | Claude Design session-3 handoff resolutions (pre-tier-2 integration)
+
+Resolves all nine numbered findings + structural questions from Claude Design's session-1-to-3 handoff (received 260427). Authored by Claude Code in Mitch's local session; ratified by operator. Addresses items blocking tier-2 Tokens authoring.
+
+- `decisions/0004-seed-contradictions-resolution.md` — palette closure, gradient name, WCAG headline, SEED authority order
+  - ConnexusMinds palette closes at **six** colours (5 brand-identity + 1 semantic-alert: Connection Coral `#DC2626` for error/priority/urgent CTA)
+  - Coral–Amber adjacency banned (1.52:1 hue confusion)
+  - Canonical gradient names: **Intelligence Flow**, **Growth Trajectory** (not "Growth Path"), **Insight Emergence**
+  - SEED WCAG-AA blanket headline annotated as overstated (Insight Amber on white = 3.19:1 — fails AA body); SEED CLARIFICATION annotation added
+  - Meta-rule: SEED corpus is one body; contradictions resolve via ADR per case
+- `decisions/0005-voice-pillar-count.md` — VOICE.md retains **three pillars**; pillar 3 expanded with named sub-modes 3a (calibrated confidence) + 3b (refuse to mislead). **Supersedes** Claude Design web-side ADR 0006 (Proposed) which had recommended a four-pillar split.
+- `decisions/0006-audience-model-six.md` — audience model retained at **six**; cold-prospect ConnexusMinds counterparts codified as a *first-touch register modulation* of audience 3, not a distinct seventh audience.
+- `decisions/0007-token-architecture-nested-source-split-exports.md` — tier-2 sources are **nested namespaces** (`hensph.*`, `connexusminds.*`, `shared.*`) in single files per token kind; tier-5 generates per-brand exports.
+- `decisions/0008-tier-sequencing.md` — endorsed sequence: tier-2 colour both brands → typography both brands → spacing → motion → tier-3 patterns → tier-4 contexts → UI kits when source attaches. ConnexusMinds tier-2 derived from spec carries reconciliation marker for when running CSS attaches.
+- `decisions/0009-unverified-tripwires-disposition.md` — strip OPAL 94.3% and 90% trademark-rejection figures from any tier file; retain underlying principles. SEED UNVERIFIED annotations remain as audit trail.
+- `decisions/0010-persistence-and-numbering-reconciliation.md` — ratifies push-to-repo as operator-driven post-session; CD workspace versions are drafts; renumbers CD's web-side ADRs at integration (CD ADR 0006 Proposed superseded by repo ADR 0005; CD ADRs 0004/0005/0007/0008 → repo 0011/0012/0013/0014 at integration commit).
+- `BRIEF.md §1a` — ConnexusMinds palette updated to six-colour closure; canonical gradient names listed; ADR cross-references added; tier-2 token-architecture decision pinned to ADR 0007.
+- `SEED/CONNEXUSMINDS-colour-guide.md` — two CLARIFICATION annotations added in place (matching the v0.1.4 OPAL UNVERIFIED-precedent for SEED-safety annotations only): WCAG-AA overstatement; gradient-name correction. Body unchanged.
+- `docs/TIER-2-INHERITANCE-LOG.md` — new file bundling open debts (HensPham faint-grey AA failure; CM Amber text-bearing; CM Insight Emergence gradient text-overlay; HensPham warm-greys curation; tier-3 Thai-rendering pattern) so tier-2 colour authoring inherits a clean to-do list rather than rediscovering each.
+- `decisions/0011-connexusminds-aspirational-vs-deployed.md` — survey-grounded resolution of handoff §3 (composition scope) and §4 (running CSS gap):
+  - Composition "ConnexusMinds by HensPham" appears in zero deployed artefacts; codified as scoped intent for first-touch commercial only with explicit "not yet deployed" status note in tier-4
+  - No ConnexusMinds site source exists; tier-5 reconciliation marker generalised from "running CSS when site attaches" to "first-deployed artefact that exercises tokens" (likely sequence: proposal/SOW template → signature template → any future site)
+  - ConnexusMinds codified as documents-and-comms surface primarily; tier-4 CLIENT-DELIVERABLES.md is the primary ConnexusMinds surface; WEBSITE.md remains primarily HensPham
+  - Operator-side note (separate from design system): brand-name rename Connexus Intelligence → ConnexusMinds has not propagated to `00-AREA/7A-PROJECTS/CONNEXUS/STD-SIGNATURE_POLICY.md`; flagged for operator action
+
 ## 260424 | v0.1.6 | Post-session-1 adjustments (pre-session-2 integration prep)
 
 - `BRIEF.md §2 audience 2` — expanded from "Website visitors at mitch-hensman.com" to cover both brand surfaces (HensPham mitch-hensman.com + ConnexusMinds connexusminds.com); audience model stays six-category (stable per session-1 review)

@@ -42,10 +42,13 @@
 - **Usage**: Hero sections, primary buttons, feature highlights
 
 ### Secondary Gradient  
+<!-- CLARIFICATION (added 260427 per ADR 0004): The canonical name for this gradient is **Growth Trajectory** (consistent with the brand-design-guide §2.3 naming pattern: Intelligence Flow / Growth Trajectory / Insight Emergence). The "Growth Path" name in the line below is a SEED-internal divergence superseded at the design-system layer. -->
 - **Growth Path**: Intelligence Sage → Deep Teal (45° angle)
 - **Usage**: Progress indicators, secondary elements
 
 ## Accessibility Standards
+
+<!-- CLARIFICATION (added 260427 per ADR 0004): The headline "All colors pass WCAG AA (4.5:1 minimum)" is overstated. Measured: Insight Amber #D97706 on white = 3.19:1 — fails AA body text (passes only 3:1 large/non-text). The operative constraint immediately below ("Never place Insight Amber text on white backgrounds") is correct and remains in force. Tier-2 colour authoring derives accurate per-pair contrast tables; treat the headline as aspirational, not measured. -->
 
 ### Contrast Ratios
 - Text on White: All colors pass WCAG AA (4.5:1 minimum)

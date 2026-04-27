@@ -34,17 +34,20 @@ The operator runs two brands in complementary layers. The design system covers b
 
 **ConnexusMinds** (corporate consultancy; Mitch + Mai partnership) — `connexusminds.com`
 - Network-topology visual metaphor (5–7 node constellation; golden ratio proportions)
-- Distinct palette: Deep Teal `#0F766E` (primary), Network Navy `#1E3A8A`, Intelligence Sage `#166534`, Insight Amber `#D97706`, Wisdom Grey `#475569`
+- Distinct palette — six colours total per ADR 0004:
+  - Brand-identity layer (5): Deep Teal `#0F766E` (primary), Network Navy `#1E3A8A`, Intelligence Sage `#166534`, Insight Amber `#D97706`, Wisdom Grey `#475569`
+  - Semantic-alert layer (1): Connection Coral `#DC2626` — error / priority / urgent CTA only
+  - Coral and Amber must not appear as semantically distinct adjacent cues (1.52:1 hue confusion)
 - Typography: Inter Variable (600 for "CONNEXUS", 400 for "Minds"), fallback Source Sans Pro
-- Gradients approved (Intelligence Flow: Deep Teal → Network Navy, 135°) — this is a deliberate divergence from the HensPham-layer gradient ban
-- Canonical specs in `SEED/CONNEXUSMINDS-colour-guide.md` + `SEED/CONNEXUSMINDS-brand-design-guide.md`
+- Gradients approved (canonical names per ADR 0004): **Intelligence Flow** (Deep Teal → Network Navy, 135°), **Growth Trajectory** (Sage → Deep Teal, 45°), **Insight Emergence** (Navy → Amber, 15% opacity) — deliberate divergence from the HensPham gradient ban
+- Canonical specs in `SEED/CONNEXUSMINDS-colour-guide.md` + `SEED/CONNEXUSMINDS-brand-design-guide.md` (note: colour guide carries CLARIFICATION annotation appended at v0.1.7); SEED contradictions adjudicated per `decisions/0004-seed-contradictions-resolution.md`
 - Public-facing corporate authority and systematic capability
 
 **Composition** — "ConnexusMinds by HensPham" is the documented combined usage for trust-building in early client relationships. The two brands coexist rather than merge.
 
 **What the design system authors**:
 - **Tier-1 Foundations** captures shared voice principles (honesty, directness, evidence, UK English, Minto / BLUF structure, accessibility AA+ floor); `ANTI-PATTERNS.md` must disambiguate HensPham-specific bans (gradients, emoji) from ConnexusMinds-specific permissions (approved gradients for hero sections; network-topology visuals). A single ANTI-PATTERNS.md with per-brand sub-sections is acceptable; two files are also acceptable — decide via ADR.
-- **Tier-2 Tokens** contains two brand token sets. `2-TOKENS/colour.yaml` either nests under `hensph.*` and `connexusminds.*` namespaces, or splits into `colour.hensph.yaml` + `colour.connexusminds.yaml`. Same question for typography. Decide at tokens session and capture as ADR.
+- **Tier-2 Tokens** contains two brand token sets. **Resolved per ADR 0007**: source nesting under `hensph.*`, `connexusminds.*`, and `shared.*` namespaces in single files per token kind (`colour.yaml`, `typography.yaml`, `spacing.yaml`, `motion.yaml`); per-brand exports at `5-INTERFACES/`. Tier-2 sequencing per ADR 0008.
 - **Tier-3 Patterns** is largely shared (hierarchy, layout, dataviz, document structure, multilingual); imagery and motion may have per-brand variants.
 - **Tier-4 Contexts**: `WEBSITE.md` should either cover both sites (with per-brand sections) or split into `WEBSITE-HENSPH.md` + `WEBSITE-CONNEXUSMINDS.md`. `CLIENT-DELIVERABLES.md` applies ConnexusMinds corporate register. `GOAL-OVERRIDES/7A-CONNEXUS.md` formalises any register-specific overrides beyond the WEBSITE context.
 - **Tier-5 Interfaces**: `CSS-CANONICAL.md` references both canonical CSS sources (HensPham: mitch-hensman.com repo; ConnexusMinds: `connexusminds.com` repo — not yet available locally, flag as gap).

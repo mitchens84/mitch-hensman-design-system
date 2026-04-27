@@ -6,3 +6,6 @@
 .cache/
 node_modules/
 dist/
+
+# Claude Code worktrees (per STD-TOOL_GIT §2.2)
+.claude/worktrees/
