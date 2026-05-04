@@ -66,13 +66,14 @@ Tracks what's populated vs scaffold-only. Status symbols: ✓ complete · ▶ in
 
 | File | Status | Notes |
 |---|---|---|
-| `README.md` | ✓ | Repo orientation |
+| `README.md` | ✓ | Repo orientation; updated v0.1.9 |
 | `BRIEF.md` | ✓ | Claude Design authoring instructions |
 | `INTEGRATION-MAP.md` | ✓ | Post-handoff integration guide |
 | `CATALOGUE.md` | ✓ | This document |
 | `CHANGELOG.md` | ▶ | Entries added per session |
 | `SESSION-PLAYBOOK.md` | ✓ | Per-session entry point (added v0.1.8) |
 | `DEPENDENCIES.md` | ✓ | Tier dependency map (added v0.1.8) |
+| `GLOSSARY.md` | ✓ | Terms-of-art (added v0.1.9; per references/govuk-design-system.md pattern) |
 | `LICENSE` | ✓ | MIT |
 
 ### SEED/
@@ -182,17 +183,33 @@ Tracks what's populated vs scaffold-only. Status symbols: ✓ complete · ▶ in
 | `decisions/0011-connexusminds-aspirational-vs-deployed.md` | ✓ |
 | `decisions/0012-anti-generic-protocol-and-infrastructure-additions.md` | ✓ (added v0.1.8) |
 
-### assets/, examples/, prompts/, fixtures/, reviews/, scripts/, references/ (added v0.1.8)
+### assets/, examples/, prompts/, fixtures/, reviews/, scripts/, references/ (added v0.1.8 — v0.1.9 expanded)
 
 | File | Status |
 |---|---|
 | `assets/README.md` + subfolder READMEs (fonts/, logos/, favicons/) | ✓ |
 | `examples/README.md` | ✓ (specimens added per-context as authored) |
-| `prompts/README.md` | ✓ (per-tier prompt files TBD) |
-| `fixtures/README.md` | ✓ (initial fixtures TBD) |
+| `prompts/README.md` | ✓ |
+| `prompts/_universal-opening.md` | ✓ (added v0.1.9) |
+| `prompts/_quick-start.md` | ✓ (added v0.1.9 — single-page session-opener) |
+| `prompts/tier-1-foundations.md` | ✓ (added v0.1.9) |
+| `prompts/tier-2-token.md` | ✓ (added v0.1.9) |
+| `prompts/tier-3-pattern.md` | ✓ (added v0.1.9) |
+| `prompts/tier-4-context.md` | ✓ (added v0.1.9) |
+| `prompts/tier-5-interface.md` | ✓ (added v0.1.9) |
+| `prompts/revision.md` | ✓ (added v0.1.9) |
+| `fixtures/README.md` | ✓ |
+| `fixtures/fixture-sitruna-proposal-cover.md` | ✓ (added v0.1.9) |
+| `fixtures/fixture-mitch-hensman-blog-article.md` | ✓ (added v0.1.9) |
+| `fixtures/fixture-daily-report-html.md` | ✓ (added v0.1.9) |
+| `fixtures/fixture-cold-outbound-email.md` | ✓ (added v0.1.9) |
+| `fixtures/fixture-twitter-thread.md` | ✓ (added v0.1.9) |
+| `fixtures/fixture-multilingual-pdf-thai.md` | ✓ (added v0.1.9) |
+| `fixtures/fixture-claude-conversation-response.md` | ✓ (added v0.1.9) |
 | `reviews/README.md` + `reviews/MAI-REVIEW-PROTOCOL.md` | ✓ |
+| `reviews/PACKET-TEMPLATE.md` | ✓ (added v0.1.9) |
 | `scripts/README.md` + `scripts/diff-tokens.sh` | ✓ (script logic activates when tokens authored) |
-| `references/README.md` + 6 site files (craig-mod, stripe-press, frank-chimero, edward-tufte, the-pudding, stripe-docs) | ✓ (status: candidate, awaiting operator review) |
+| `references/README.md` + 7 site files (craig-mod, stripe-press, frank-chimero, edward-tufte, the-pudding, stripe-docs, govuk-design-system) | ✓ (status: confirmed_anchor — operator-delegated review on 2026-05-04; GOV.UK added v0.1.9) |
 
 ### docs/
 

@@ -2,7 +2,9 @@
 reference: Stripe Docs
 url: https://docs.stripe.com/
 inspected: 2026-05-04
-status: candidate
+status: confirmed_anchor
+confirmed_by: Claude Code review delegated by operator on 2026-05-04
+caveat: Indigo/purple gradient sidebar accents conflict with operator's no-gradients value; extract the structural pattern (action-verb labels, three-level sidebar, task-oriented page naming) without the brand colour treatment.
 ---
 
 # Stripe Docs

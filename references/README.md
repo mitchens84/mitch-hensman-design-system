@@ -6,7 +6,7 @@ status: draft — operator review required
 
 # Design Reference Sites
 
-Six sites the operator has explicitly endorsed as visual anchors for the mitch-hensman design system. All files default to `candidate` status. Set to `confirmed_anchor` after operator review; use `reject` if a site should be dropped from active reference.
+Seven sites operating as visual and structural anchors for the mitch-hensman design system. Six were operator-endorsed; GOV.UK Design System added 2026-05-04 by Claude Code with operator-delegated review authority. All seven status: `confirmed_anchor`. Operator may downgrade to `reject` if any prove unhelpful in practice.
 
 ## Sites
 
@@ -15,9 +15,10 @@ Six sites the operator has explicitly endorsed as visual anchors for the mitch-h
 | [craig-mod](./craig-mod.md) | Craig Mod | Three-element essay listing + footnote discipline + `* * *` section breaks as the complete long-form typography system. |
 | [stripe-press](./stripe-press.md) | Stripe Press | Zero UI colour — all chromatic interest delegated to cover art; assertive-not-effusive editorial voice at six syllables. |
 | [frank-chimero](./frank-chimero.md) | Frank Chimero | `theme-color: #000000` + semantic `<article>` wrapper + conceptual illustration thumbnails over photography. |
-| [edward-tufte](./edward-tufte.md) | Edward Tufte | ET Book typeface (Apache 2.0, directly adoptable) and tufte-css sidenote pattern are the most immediately usable extractions. |
+| [edward-tufte](./edward-tufte.md) | Edward Tufte | ET Book typeface (MIT, directly adoptable) and tufte-css sidenote pattern are the most immediately usable extractions. |
 | [the-pudding](./the-pudding.md) | The Pudding | Scroll-as-narrative and dual-SVG responsive charts; colour earns its place by carrying data meaning, not decoration. |
 | [stripe-docs](./stripe-docs.md) | Stripe Docs | Action-verb navigation labels + three-level sidebar + task-oriented page naming — the structural model for design system docs. |
+| [govuk-design-system](./govuk-design-system.md) | GOV.UK Design System | Public-sector restraint as a complete design system — evidence-based, plain English, accessibility-first, community co-designed; the model for documenting a design system. |
 
 ## Cross-cutting signals
 

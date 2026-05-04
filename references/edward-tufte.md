@@ -2,7 +2,8 @@
 reference: Edward Tufte
 url: https://www.edwardtufte.com/
 inspected: 2026-05-04
-status: candidate
+status: confirmed_anchor
+confirmed_by: Claude Code review delegated by operator on 2026-05-04
 ---
 
 # Edward Tufte
@@ -13,7 +14,7 @@ Tufte is the theoretical foundation for the operator's evidence-based, functiona
 
 ## Visual signals
 
-- **Typography:** High-contrast serif/sans mix consistent with Tufte's published work. The open-source ET Book typeface (Bembo derivative, Apache 2.0) is Tufte's custom face — used in his CSS framework and available at `github.com/edwardtufte/et-book`. Generous whitespace; spacious line-height; wide margins for potential sidenote use.
+- **Typography:** High-contrast serif/sans mix consistent with Tufte's published work. The open-source ET Book typeface (Bembo derivative, MIT) is Tufte's custom face — used in his CSS framework and available at `github.com/edwardtufte/et-book`. Generous whitespace; spacious line-height; wide margins for potential sidenote use.
 - **Colour:** White/off-white background; black primary text; grey secondary text. Earth tones enter only through photography. Zero accent colours in UI chrome.
 - **Layout:** Centred content column; responsive grid; two-column nav (desktop/mobile). Sections: Licensing / Books / Courses / Art / Science — taxonomy-driven, not editorial-driven. Standard Tufte-CSS body column is ~55% width with ~40% margin reserved for annotations.
 - **Motion:** Absent.
@@ -28,7 +29,7 @@ Tufte is the theoretical foundation for the operator's evidence-based, functiona
 
 ## Specific elements worth borrowing
 
-1. **ET Book typeface** (Apache 2.0, `github.com/edwardtufte/et-book`): Bembo derivative optimised for long-form reading; authentic provenance aligns with operator's substance-first identity. Thai glyph coverage requires pairing with a compatible Thai face.
+1. **ET Book typeface** (MIT, `github.com/edwardtufte/et-book`): Bembo derivative optimised for long-form reading; authentic provenance aligns with operator's substance-first identity. Thai glyph coverage requires pairing with a compatible Thai face.
 2. **Sidenote / margin-note pattern** (`github.com/edwardtufte/tufte-css`): annotations in the margin column rather than footnotes — keeps reading flow intact while preserving full depth. WCAG-compliant implementation documented in tufte-css.
 3. **Section taxonomy as navigation:** content organised by discipline (Art / Science / Books / Courses) not recency — a model for structuring a multi-domain personal site.
 4. **Centred content column with wide margins:** creates natural sidenote space and concentrates reading attention; ~55% body / ~40% margin is the documented Tufte-CSS ratio.

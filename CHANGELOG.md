@@ -4,6 +4,43 @@ Version history for the Mitch Hensman Design System.
 
 Format: `YYMMDD | version | change`. Newest first. One-line summary per entry; detail in `decisions/` if material.
 
+## 260504 | v0.1.9 | Reference-set confirmed; GOV.UK added; prompts + fixtures authored; glossary + quick-start + Mai packet template + tier README refresh
+
+Operator-delegated review batch by Claude Code; ratified for handoff. Closes the remaining loop items from v0.1.8 and the new gaps surfaced in close-out audit. No new ADR; this batch is content authoring + structural housekeeping (no decision reversals).
+
+**References (operator-delegated review)**:
+- All six existing references (Craig Mod, Stripe Press, Frank Chimero, Tufte, The Pudding, Stripe Docs) marked `confirmed_anchor` with caveat notes where partial alignment (The Pudding scroll-driven motion; Stripe Docs gradient sidebar)
+- **GOV.UK Design System** added as 7th anchor (`references/govuk-design-system.md`) — proposed and self-confirmed under delegated review; the only design-system-as-product anchor; teaches both design-of-output and design-of-the-system; introduces the "when to use / when not to use" pairing pattern adopted in tier-3 README and prompts
+- **Fact-check correction**: ET Book typeface licence corrected from claimed Apache 2.0 to actual MIT (verified at github.com/edwardtufte/et-book on 260504); operator-delegated browser-inspector wrote the wrong licence — corrected at source in `references/edward-tufte.md` and `references/README.md`. This is a cite-discipline failure that would have propagated into Tier-2 typography authoring; flag for cite-or-don't-ship rule including SEED-and-AI-derived claims
+
+**Prompts**:
+- `prompts/_universal-opening.md` — common opening fragment per-tier prompts inherit
+- `prompts/_quick-start.md` — single-page operator-facing summary; "if you read nothing else"
+- `prompts/tier-1-foundations.md`, `tier-2-token.md`, `tier-3-pattern.md`, `tier-4-context.md`, `tier-5-interface.md`, `revision.md` — all six per-tier templates authored
+
+**Fixtures (regression suite v0)**:
+- `fixture-sitruna-proposal-cover.md` — ConnexusMinds first-touch composition
+- `fixture-mitch-hensman-blog-article.md` — HensPham long-form
+- `fixture-daily-report-html.md` — renderer-only HTML discipline
+- `fixture-cold-outbound-email.md` — communicator-skill register
+- `fixture-twitter-thread.md` — SOCIAL/X register at character-constrained scale
+- `fixture-multilingual-pdf-thai.md` — Playwright-not-weasyprint pipeline assertion
+- `fixture-claude-conversation-response.md` — AI-CONVERSATION canonical exemplar; CLAUDE.md §0.3 derivation source
+
+**Glossary + housekeeping**:
+- `GLOSSARY.md` — terms-of-art (per `references/govuk-design-system.md` pattern); 24 entries
+- `reviews/PACKET-TEMPLATE.md` — copy-paste skeleton for Mai-review packets
+- `README.md` (root) — status section refreshed; v0.1 scaffold language retired; v0.1.8 + v0.1.9 reflected; structure list updated; public-visibility caveat added
+- Tier READMEs refreshed to list v0.1.8 + v0.1.9 additions: `1-FOUNDATIONS/README.md`, `2-TOKENS/README.md`, `3-PATTERNS/README.md`, `5-INTERFACES/README.md`
+- `CATALOGUE.md` — coverage table updated for v0.1.9 additions
+
+**Known gaps deferred** (logged here so future sessions inherit the to-do list):
+- Versioning policy doc — when does v0.x → v1.0; patch vs minor heuristic
+- `CONTRIBUTING.md` for public-repo external contributors
+- Failure-mode visual gallery — `examples/failure-modes/` with screenshots (currently text-only in ANTI-GENERIC-PROTOCOL §4)
+- Cross-AI consultation protocol — how Codex / Gemini (per operator's `consult-agent` setup) consume this design system
+- `2-TOKENS/motion.{md,yaml}` substantive authoring (operator-side; default-off stance is short and high-leverage; deferred to next Tier-2 batch)
+
 ## 260504 | v0.1.8 | Anti-generic protocol, personal markers, skill adapters, infrastructure scaffolds
 
 Operator-side batch authored by Claude Code; ratified by Mitch. Scope: gaps surfaced during review post-v0.1.7 — generic-AI mitigation, skill invocation, missing tier scaffolds, asset infrastructure, session-playbook entry point, Mai-review protocol, browser-inspected admiration anchors. Detail in `decisions/0012-anti-generic-protocol-and-infrastructure-additions.md`.

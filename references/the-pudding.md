@@ -2,7 +2,9 @@
 reference: The Pudding
 url: https://pudding.cool/
 inspected: 2026-05-04
-status: candidate
+status: confirmed_anchor
+confirmed_by: Claude Code review delegated by operator on 2026-05-04
+caveat: Scroll-driven motion is anchor-relevant ONLY for data-narrative contexts (DATAVIZ, REPORTS with embedded charts); operator's restrained-motion stance otherwise applies. Borrow the visual language (dual SVG, colour-as-data, voice register) for general use; borrow the scroll-as-narrative mechanism only when motion encodes a data argument.
 ---
 
 # The Pudding

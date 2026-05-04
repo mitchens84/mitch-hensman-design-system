@@ -2,7 +2,8 @@
 reference: Frank Chimero
 url: https://frankchimero.com/
 inspected: 2026-05-04
-status: candidate
+status: confirmed_anchor
+confirmed_by: Claude Code review delegated by operator on 2026-05-04
 ---
 
 # Frank Chimero
