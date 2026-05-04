@@ -4,6 +4,30 @@ Version history for the Mitch Hensman Design System.
 
 Format: `YYMMDD | version | change`. Newest first. One-line summary per entry; detail in `decisions/` if material.
 
+## 260504 | v0.1.8 | Anti-generic protocol, personal markers, skill adapters, infrastructure scaffolds
+
+Operator-side batch authored by Claude Code; ratified by Mitch. Scope: gaps surfaced during review post-v0.1.7 — generic-AI mitigation, skill invocation, missing tier scaffolds, asset infrastructure, session-playbook entry point, Mai-review protocol, browser-inspected admiration anchors. Detail in `decisions/0012-anti-generic-protocol-and-infrastructure-additions.md`.
+
+- `decisions/0012` — single ADR documenting the full batch
+- `1-FOUNDATIONS/ANTI-GENERIC-PROTOCOL.md` — confirmed-anchors + cite-or-don't-ship + per-output weirdness check + failure-mode catalogue + opening-sentence test + per-session ritual
+- `1-FOUNDATIONS/PERSONAL-MARKERS.md` — concrete unfakeable details catalogue (Bean, Chiang Mai, Imperial, vegan, ConnexusMinds-Mai, Croatia family); used by ANTI-GENERIC-PROTOCOL §3
+- `1-FOUNDATIONS/LOGO.md` — scaffold; logo + mark usage per brand
+- `3-PATTERNS/IMAGERY.md`, `ICONOGRAPHY.md`, `AUDIO-VIDEO.md` — scaffolds
+- `2-TOKENS/iconography.{md,yaml}`, `radii.{md,yaml}`, `elevation.{md,yaml}`, `breakpoints.{md,yaml}` — scaffolds
+- `5-INTERFACES/SKILL-ADAPTERS.md` — authored: per-skill loading spec, caching, version-pin, drift detection
+- `SESSION-PLAYBOOK.md` (root) — per-session entry point with current state + ADR-0008 sequencing operationalised
+- `DEPENDENCIES.md` (root) — tier dependency map; cross-tier contradiction-handling protocol
+- `assets/` + `assets/{fonts,logos,favicons}/README.md` — asset library structure with licensing rule
+- `examples/README.md` — concrete-specimen folder per context
+- `prompts/README.md` — reusable Claude Design session prompts (templates TBD)
+- `fixtures/README.md` — regression suite for design-system fidelity (initial fixtures TBD)
+- `reviews/README.md` + `reviews/MAI-REVIEW-PROTOCOL.md` — packet shape + cadence for downstream review
+- `scripts/README.md` + `scripts/diff-tokens.sh` — initial drift-detection scaffold
+- `references/README.md` + six site files (craig-mod, stripe-press, frank-chimero, edward-tufte, the-pudding, stripe-docs) — confirmed-anchor inspection records (status: candidate; awaiting operator review)
+- `BRIEF.md §0` — required-reading list expanded from 8 to 11; ANTI-GENERIC-PROTOCOL + PERSONAL-MARKERS + references/<slug> added; per-session ritual cited
+- `CATALOGUE.md` — coverage table updated; entry-point map updated; new folders documented
+- Most surprising browser finding: The Pudding ends "Invisible Epidemic" with a plain `donate.stripe.com` link, no styling — functional-over-ornamental applied to monetisation
+
 ## 260427 | v0.1.7 | Claude Design session-3 handoff resolutions (pre-tier-2 integration)
 
 Resolves all nine numbered findings + structural questions from Claude Design's session-1-to-3 handoff (received 260427). Authored by Claude Code in Mitch's local session; ratified by operator. Addresses items blocking tier-2 Tokens authoring.

@@ -71,6 +71,8 @@ Tracks what's populated vs scaffold-only. Status symbols: ✓ complete · ▶ in
 | `INTEGRATION-MAP.md` | ✓ | Post-handoff integration guide |
 | `CATALOGUE.md` | ✓ | This document |
 | `CHANGELOG.md` | ▶ | Entries added per session |
+| `SESSION-PLAYBOOK.md` | ✓ | Per-session entry point (added v0.1.8) |
+| `DEPENDENCIES.md` | ✓ | Tier dependency map (added v0.1.8) |
 | `LICENSE` | ✓ | MIT |
 
 ### SEED/
@@ -100,6 +102,9 @@ Tracks what's populated vs scaffold-only. Status symbols: ✓ complete · ▶ in
 | `VOICE.md` | ○ |
 | `ANTI-PATTERNS.md` | ○ |
 | `ACCESSIBILITY.md` | ○ |
+| `LOGO.md` | ○ (added v0.1.8) |
+| `ANTI-GENERIC-PROTOCOL.md` | ✓ (added v0.1.8 — operator-side) |
+| `PERSONAL-MARKERS.md` | ✓ (added v0.1.8 — operator-side) |
 
 ### 2-TOKENS/
 
@@ -110,6 +115,10 @@ Tracks what's populated vs scaffold-only. Status symbols: ✓ complete · ▶ in
 | `typography.md` + `typography.yaml` | ○ |
 | `spacing.md` + `spacing.yaml` | ○ |
 | `motion.md` + `motion.yaml` | ○ |
+| `iconography.md` + `iconography.yaml` | ○ (added v0.1.8) |
+| `radii.md` + `radii.yaml` | ○ (added v0.1.8) |
+| `elevation.md` + `elevation.yaml` | ○ (added v0.1.8) |
+| `breakpoints.md` + `breakpoints.yaml` | ○ (added v0.1.8) |
 | `tokens.yaml` | ○ |
 
 ### 3-PATTERNS/
@@ -123,6 +132,9 @@ Tracks what's populated vs scaffold-only. Status symbols: ✓ complete · ▶ in
 | `DOCUMENT-STRUCTURE.md` | ○ |
 | `INTERACTION.md` | ○ |
 | `MULTILINGUAL.md` | ○ |
+| `IMAGERY.md` | ○ (added v0.1.8) |
+| `ICONOGRAPHY.md` | ○ (added v0.1.8) |
+| `AUDIO-VIDEO.md` | ○ (added v0.1.8 — extensibility scaffold) |
 
 ### 4-CONTEXTS/
 
@@ -147,7 +159,7 @@ Tracks what's populated vs scaffold-only. Status symbols: ✓ complete · ▶ in
 | `README.md` | ✓ |
 | `CSS-CANONICAL.md` | ○ |
 | `YAML-EXPORT.md` | ○ |
-| `SKILL-ADAPTERS.md` | ○ |
+| `SKILL-ADAPTERS.md` | ✓ (authored v0.1.8 — operator-side plumbing) |
 | `CLAUDE-MD-DERIVATION.md` | ○ |
 | `NOTEBOOKLM-SNAPSHOT.md` | ○ |
 | `PROSE-SUMMARY.md` | ○ |
@@ -158,6 +170,29 @@ Tracks what's populated vs scaffold-only. Status symbols: ✓ complete · ▶ in
 |---|---|
 | `decisions/README.md` | ✓ |
 | `decisions/0001-scaffold-establishment.md` | ✓ |
+| `decisions/0002-handoff-model-probe.md` | ✓ |
+| `decisions/0003-two-brand-scope.md` | ✓ |
+| `decisions/0004-seed-contradictions-resolution.md` | ✓ |
+| `decisions/0005-voice-pillar-count.md` | ✓ |
+| `decisions/0006-audience-model-six.md` | ✓ |
+| `decisions/0007-token-architecture-nested-source-split-exports.md` | ✓ |
+| `decisions/0008-tier-sequencing.md` | ✓ |
+| `decisions/0009-unverified-tripwires-disposition.md` | ✓ |
+| `decisions/0010-persistence-and-numbering-reconciliation.md` | ✓ |
+| `decisions/0011-connexusminds-aspirational-vs-deployed.md` | ✓ |
+| `decisions/0012-anti-generic-protocol-and-infrastructure-additions.md` | ✓ (added v0.1.8) |
+
+### assets/, examples/, prompts/, fixtures/, reviews/, scripts/, references/ (added v0.1.8)
+
+| File | Status |
+|---|---|
+| `assets/README.md` + subfolder READMEs (fonts/, logos/, favicons/) | ✓ |
+| `examples/README.md` | ✓ (specimens added per-context as authored) |
+| `prompts/README.md` | ✓ (per-tier prompt files TBD) |
+| `fixtures/README.md` | ✓ (initial fixtures TBD) |
+| `reviews/README.md` + `reviews/MAI-REVIEW-PROTOCOL.md` | ✓ |
+| `scripts/README.md` + `scripts/diff-tokens.sh` | ✓ (script logic activates when tokens authored) |
+| `references/README.md` + 6 site files (craig-mod, stripe-press, frank-chimero, edward-tufte, the-pudding, stripe-docs) | ✓ (status: candidate, awaiting operator review) |
 
 ### docs/
 
@@ -175,14 +210,20 @@ Where to look for what.
 | If you want... | Start here |
 |---|---|
 | To understand the system | `README.md` → this file → `SEED/DESIGN-SIGNALS.md` |
+| To start a new authoring session | `SESSION-PLAYBOOK.md` (added v0.1.8) → `BRIEF.md` → `prompts/<tier>.md` |
 | To author into the system | `BRIEF.md` → `docs/PROMPTING-PLAYBOOK.md` |
+| To check tier dependencies before editing | `DEPENDENCIES.md` (added v0.1.8) |
+| To avoid generic AI output | `1-FOUNDATIONS/ANTI-GENERIC-PROTOCOL.md` + `1-FOUNDATIONS/PERSONAL-MARKERS.md` (added v0.1.8) |
 | To share an intro | `docs/intro-for-sharing.md` |
 | Brand identity canonical | `SEED/STD-STYLE_GUIDE-excerpt.md` |
 | Voice rules | `1-FOUNDATIONS/VOICE.md` (when populated); `SEED/VOICE-CONSTRAINTS.md` for hard constraints |
 | Existing voice frameworks | `SEED/VOICE-FRAMEWORKS.md` |
 | Existing visual frameworks | `SEED/VISUAL-FRAMEWORKS.md` |
+| Design references / inspiration | `references/` (added v0.1.8) |
 | Design tokens (canonical spec) | `2-TOKENS/*` |
 | Design tokens (running CSS) | `SEED/tokens-reference.css` and `typography-reference.css` |
+| How skills consume the design system | `5-INTERFACES/SKILL-ADAPTERS.md` (authored v0.1.8) |
+| Mai's review packet shape | `reviews/MAI-REVIEW-PROTOCOL.md` (added v0.1.8) |
 | Why a decision was made | `decisions/` |
 | Version history | `CHANGELOG.md` |
 | How outputs propagate into the wider system | `INTEGRATION-MAP.md` |

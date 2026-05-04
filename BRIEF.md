@@ -4,15 +4,20 @@
 >
 > Before generating anything, confirm you have read:
 > 1. This BRIEF.md
-> 2. `SEED/DESIGN-SIGNALS.md` — synthesised signals (character spine, principles, voice samples, admiration references)
-> 3. `SEED/PHILOSOPHY-2024.md` — archived 8 design principles (serious prior art)
-> 4. `SEED/VOICE-CONSTRAINTS.md` — hard voice/typographic constraints
-> 5. `SEED/VOICE-FRAMEWORKS.md` — named frameworks (Minto, BLUF, Pyramid, Trust Triad, etc.)
-> 6. `SEED/VISUAL-FRAMEWORKS.md` — named visual/graphics frameworks (OPAL, CIM, scene graph, etc.)
-> 7. `SEED/STD-STYLE_GUIDE-excerpt.md` — canonical brand identity
-> 8. `SEED/tokens-reference.css` + `SEED/typography-reference.css` — running CSS (mitch-hensman.com)
+> 2. `1-FOUNDATIONS/ANTI-GENERIC-PROTOCOL.md` — operationalises the anti-generic stance; required at every session open (added v0.1.8)
+> 3. `1-FOUNDATIONS/PERSONAL-MARKERS.md` — unfakeable-detail catalogue used by ANTI-GENERIC-PROTOCOL §3 weirdness check (added v0.1.8)
+> 4. `SEED/DESIGN-SIGNALS.md` — synthesised signals (character spine, principles, voice samples, admiration references)
+> 5. `SEED/PHILOSOPHY-2024.md` — archived 8 design principles (serious prior art)
+> 6. `SEED/VOICE-CONSTRAINTS.md` — hard voice/typographic constraints
+> 7. `SEED/VOICE-FRAMEWORKS.md` — named frameworks (Minto, BLUF, Pyramid, Trust Triad, etc.)
+> 8. `SEED/VISUAL-FRAMEWORKS.md` — named visual/graphics frameworks (OPAL, CIM, scene graph, etc.)
+> 9. `SEED/STD-STYLE_GUIDE-excerpt.md` — canonical brand identity
+> 10. `SEED/tokens-reference.css` + `SEED/typography-reference.css` — running CSS (mitch-hensman.com)
+> 11. `references/<slug>.md` for any admiration anchor cited in this session (added v0.1.8)
 >
-> Then summarise the operator's voice in your own words, their top 3 design constraints, and the 2 most important anti-patterns you will avoid. Do not begin generating tier content until the operator confirms your grounding is accurate.
+> Then perform the per-session ritual from `1-FOUNDATIONS/ANTI-GENERIC-PROTOCOL.md §6`: state the task; cite ≥1 anchor from `references/`; cite ≥1 PERSONAL-MARKERS lever; cite ≥1 BRIEF anti-pattern at risk; then summarise the operator's voice in your own words, their top 3 design constraints, and the 2 most important anti-patterns you will avoid. Do not begin generating tier content until the operator confirms your grounding is accurate.
+>
+> See `SESSION-PLAYBOOK.md` (root) for which tier to author next given current state.
 
 ## 1. Operator profile
 
